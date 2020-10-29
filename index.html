@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>KSAC</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <!-- <link href="assets/img/favicon.png" rel="icon"> -->
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Rapid - v2.2.0
+  * Template URL: https://bootstrapmade.com/rapid-multipurpose-bootstrap-business-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  
+<style>
+  .bi{
+    position: relative;
+  }
+  .bo {
+  width: 100%;
+  height: 300px;
+  float: left;
+  border-radius: 1px;
+  box-shadow: 0 2px 30px rgba(black, .2);
+  background: lighten(#f0f4c3, 50%);
+  position: absolute;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);z-index: 999;
+}
+
+.wave {
+  opacity: .4;
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  background: #0af;
+  /* background: purple; */
+  width: 500px;
+  height: 500px;
+  margin-left: -250px;
+  margin-top: -250px;
+  transform-origin: 50% 48%;
+  border-radius: 43%;
+  animation: drift 3000ms infinite linear;
+}
+
+.wave.-three {
+  animation: drift 5000ms infinite linear;
+}
+
+.wave.-two {
+  animation: drift 7000ms infinite linear;
+  opacity: .1;
+  background: goldenrod;
+}
+
+.box:after {
+  content: '';
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(#e8a, 1), rgba(#def, 0) 80%, rgba(white, .5));
+  z-index: 11;
+  transform: translate3d(0, 0, 0);
+}
+
+.titl {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  line-height: 300px;
+  text-align: center;
+  transform: translate3d(0, 0, 0);
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: .4em;
+  font-size: 24px;
+  text-shadow: 0 1px 0 rgba(black, .1);
+  text-indent: .3em;
+}
+@keyframes drift {
+  from { transform: rotate(0deg); }
+  from { transform: rotate(360deg); }
+}
+
+  .flip-card {
+  margin: auto;
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition-timing-function: cubic-bezier(.175, .885, .32, 1.275);
+        /* transition-duration: .5s; */
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateX(-180deg);
+
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+}
+
+.flip-card-front {
+  background-color: rgb(250, 254, 255);
+  color: black;
+
+}
+
+.flip-card-back {
+  background-color:black;
+  color: white;
+  transform: rotateX(180deg);
+}
+.bu{
+  /* background-color:black;box-shadow: -10px 10px 10px grey; */ box-shadow: -10px 10px 10px grey;
+}
+.bu:hover{
+  /* box-shadow: inset 1px 10px 10px 10px grey; */ box-shadow: none;
+ 
+}
+.butt{
+  background-color:#e2e3ec;
+  padding: 5px;
+  border-radius: 5px;
+}
+.butt a:hover{
+  color:black;
+}
+
+
+
+
+
+
+
+
+
+
+.form-dark .font-small {
+  font-size: 0.8rem; }
+
+.form-dark [type="radio"] + label,
+.form-dark [type="checkbox"] + label {
+  font-size: 0.8rem; }
+
+.form-dark [type="checkbox"] + label:before {
+  top: 2px;
+  width: 15px;
+  height: 15px; }
+
+.form-dark .md-form label {
+  color: #fff; }
+
+.form-dark input[type=email]:focus:not([readonly]) {
+  border-bottom: 1px solid #00C851;
+  -webkit-box-shadow: 0 1px 0 0 #00C851;
+  box-shadow: 0 1px 0 0 #00C851; }
+
+.form-dark input[type=email]:focus:not([readonly]) + label {
+  color: #fff; }
+
+.form-dark input[type=password]:focus:not([readonly]) {
+  border-bottom: 1px solid #00C851;
+  -webkit-box-shadow: 0 1px 0 0 #00C851;
+  box-shadow: 0 1px 0 0 #00C851; }
+
+.form-dark input[type=password]:focus:not([readonly]) + label {
+  color: #fff; }
+
+.form-dark input[type="checkbox"] + label:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  z-index: 0;
+  border: 1.5px solid #fff;
+  border-radius: 1px;
+  margin-top: 2px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s; }
+
+.form-dark input[type="checkbox"]:checked + label:before {
+  top: -4px;
+  left: -3px;
+  width: 12px;
+  height: 22px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: transparent #00c851 #00c851 transparent;
+  -webkit-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  transform: rotate(40deg);
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%; }
+
+.form-dark .modal-header {
+    border-bottom: none;
+}
+
+
+
+
+
+
+</style>
+
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-none d-lg-flex align-items-end fixed-top topbar-transparent">
+    <div class="container d-flex justify-content-end">
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-transparent">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo mr-auto"><a href="index.html">KSAC</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav class="main-nav d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <!-- <li class="drop-down"><a href="">Drop Down</a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="drop-down"><a href="#">Drop Down 2</a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="#">Drop Down 5</a></li>
+            </ul>
+          </li> -->
+          <li><a href="#services">EVENTS</a></li>
+        </ul>
+      </nav><!-- .main-nav-->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <div class="bi">
+  <div class='bo'>
+    <div class='wave -one'></div>
+    <div class='wave -two'></div>
+    <div class='wave -three'></div>
+    <div class='titl'>
+ ANNEXTURE-I
+    </div>
+  </div>
+</div>
+  <section id="hero" class="clearfix">
+
+
+ 
+
+
+    <div class="container d-flex h-100">
+
+
+
+      
+      <div class="row justify-content-center align-self-center" data-aos="fade-up">
+
+        
+        <div class="col-md-6 intro-info order-md-first order-last" data-aos="zoom-in" data-aos-delay="100">
+          <h2>K-STAR<br><span>ANNEXURE-I</span></h2>
+          <div>
+            <a href="#services" class="btn-get-started scrollto bu">REGISTER NOW</a>
+          </div>
+        </div>
+
+        <div class="col-md-6 intro-img order-md-last order-first" data-aos="zoom-out" data-aos-delay="200">
+          <img src="assets/img/intro-img.svg" alt="" class="img-fluid">
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+
+          <div class="col-lg-5 col-md-6">
+            <div class="about-img" data-aos="fade-right" data-aos-delay="100">
+              <img src="11.png" alt="image">
+            </div>
+          </div>
+
+          <div class="col-lg-7 col-md-6">
+            <div class="about-content" data-aos="fade-left" data-aos-delay="100">
+              <h2>About Us</h2>
+              <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid modi dolor et fugit a sapiente laudantium iure repellendus m
+                axime ipsum perspiciatis, odit labore velit obcaecati inventore dolore, voluptatum commodi fugiat!</h3>
+             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, labore? Suscipit explicabo quia voluptatem iusto, amet quod esse, repelle
+               ndus, possimus atque est saepe dolores doloribus? Corporis eligendi fuga fugit aliquid!</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magnam quos in accusantium, velit sequi, eos saepe doloribus sint voluptate provident eius consectetur laudantium asper
+                 natur distinctio voluptates sapiente hic id?</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- End About Section -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="darkModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog form-dark" role="document">
+    <!--Content-->
+    <div class="modal-content card card-image" style="background:linear-gradient(#5995fd,rgb(222, 222, 255));background-repeat: no-repeat;background-size: cover;">
+      <div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
+        <!--Header-->
+        <div class="modal-header text-center pb-4">
+          <h3 class="modal-title w-100 black-text font-weight-bold" id="myModalLabel"><strong>ENTER</strong> <a
+              class="blue-text font-weight-bold"><strong> DETAILS</strong></a></h3>
+          <button type="button" class="close white-text" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!--Body-->
+        <div class="modal-body">
+          <!--Body-->
+       
+          <form action="" method="POST">
+          <div class="md-form mb-2">
+           <input type="text" class="form-control validate white-text">
+         
+          </div>
+
+          <div class="md-form mb-2">
+            <input type="text" class="form-control validate white-text">
+        
+          </div>
+
+
+          <div class="md-form mb-2">
+            <input type="text" class="form-control validate white-text" placeholder="NAME">
+          </div>
+
+          <div class="md-form mb-5">
+<select name="" id=""  class="form-control validate white-text" >CATEGORY
+<option value="">HELLO</option>
+<option value="">HELLO</option>
+<option value="">HELLO</option>
+<option value="">HELLO</option>
+</select>
+          </div>
+
+       
+
+          <!--Grid row-->
+          <div class="row d-flex align-items-center mb-4">
+
+            <!--Grid column-->
+            <div class="text-center mb-2 col-md-12">
+              <button type="submit" class="btn btn-success btn-block btn-rounded z-depth-1" style="border-radius: 5px;">SUBMIT</button>
+            </div>
+
+            <!--Grid column-->
+
+          </div>
+        </form>
+          <!--Grid row-->
+
+          <!--Grid row-->
+         
+          <!--Grid row-->
+
+        </div>
+      </div>
+    </div> 
+    <!--/.Content-->
+  </div>
+</div>
+<!-- Modal -->
+
+
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h3>EVENT CATEGORY</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic iste veritatis provident pariatur, debitis obcaecati, excepturi minima id sequi
+             corporis fugiat ab repellendus. Deleniti animi aut quia id voluptates sequi?.</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="flip-card box">  <h4 class="title"><a href="">DANCE</a></h4>
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="1.png" alt="Avatar" style="width:100%;height:100%;">
+               
+                </div>
+                <div class="flip-card-back">
+                
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat officiis, itaque eligendi qui fugit culpa quidem explicabo </p> 
+                  <div>
+                    <a href="" class="butt">REGISTER NOW</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="flip-card box">  <h4 class="title"><a href="">DANCE</a></h4>
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="1.png" alt="Avatar" style="width:100%;height:100%;">
+               
+                </div>
+                <div class="flip-card-back">
+                
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat officiis, itaque eligendi qui fugit culpa quidem explicabo </p> 
+                  <div>
+                    <a href="" class="butt">REGISTER NOW</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="flip-card box">  <h4 class="title"><a href="">DANCE</a></h4>
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="1.png" alt="Avatar" style="width:100%;height:100%;">
+               
+                </div>
+                <div class="flip-card-back">
+                
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat officiis, itaque eligendi qui fugit culpa quidem explicabo </p> 
+                  <div>
+                    <a href="" class="butt">REGISTER NOW</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="flip-card box">  <h4 class="title"><a href="">DANCE</a></h4>
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="1.png" alt="Avatar" style="width:100%;height:100%;">
+               
+                </div>
+                <div class="flip-card-back">
+                
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat officiis, itaque eligendi qui fugit culpa quidem explicabo </p> 
+                  <div>
+                    <!-- <a href="" class="butt">REGISTER NOW</a> -->
+
+
+
+
+
+
+                  <!-- Modal -->
+                  
+                  <div class="text-center danger">
+                    <a href="" class="btn btn-default btn-rounded" data-toggle="modal" data-target="#darkModalForm" style="background-color: #5995fd;">Register Now</a>
+                  </div>
+
+
+
+
+
+
+
+
+
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="flip-card box">  <h4 class="title"><a href="">DANCE</a></h4>
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="1.png" alt="Avatar" style="width:100%;height:100%;">
+               
+                </div>
+                <div class="flip-card-back">
+                
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat officiis, itaque eligendi qui fugit culpa quidem explicabo </p> 
+                  <div>
+                    <a href="" class="butt">REGISTER NOW</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="flip-card box">  <h4 class="title"><a href="">DANCE</a></h4>
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="1.png" alt="Avatar" style="width:100%;height:100%;">
+               
+                </div>
+                <div class="flip-card-back">
+                
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat officiis, itaque eligendi qui fugit culpa quidem explicabo </p> 
+                  <div>
+                    <a href="" class="butt">REGISTER NOW</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+    
+
+
+       
+
+      </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>KSAC</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+        All the links in the footer should remain intact.
+        You can delete the links only if you purchased the pro version.
+        Licensing information: https://bootstrapmade.com/license/
+        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Rapid
+      -->
+        Designed by 
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
